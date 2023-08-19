@@ -4,10 +4,11 @@
   "description": "blog app",
   "main": "server.js",
   "scripts": {
-    "start": "node serevr.js",
+    "start": "nodemon serevr.js",
     "server": "nodemon server.js",
     "client":"npm start --prefix ./client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "production": "node serevr.js"
   },
   "author": "techinfoyt",
   "license": "ISC",
